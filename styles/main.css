@@ -1,0 +1,309 @@
+:root {
+    --primary: #044750;
+    --secondary: #036268;
+    --ferngreen: #9BC6AB;
+    --ferntransparency: rgba(155 198 171 / 60%);
+    --limegreen: #DDE5BC;
+    --white: #fff;
+}
+
+.body {
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* background-image: linear-gradient(to top, var(--white) 0%, var(--secondary) 100% ) ; */
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 2rem 0 1rem 0;
+}
+
+.navbar {
+    display: none;
+}
+
+.header {
+    background-image: url(/img/coding.jpg);
+    background-size: cover;
+    position: relative;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title {
+    background-color: var(--ferntransparency);
+    color: var(--primary);
+    border-radius: 20px;
+    position: absolute;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.main {
+    margin: 1rem 1.5rem;
+}
+
+/* SOBRE MO */
+.intro img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* SKILLS */
+.skills {
+ /* background-color: var(--ferntransparency); */
+    padding: .8rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+}
+.skills .lang {
+    margin: .2rem;
+    font-weight: bold;
+    
+}
+.skills div {
+    margin-bottom: 1rem;
+    width: 0;
+    height: 18px;
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    border-radius: 2px;
+}
+
+
+#html {
+    animation: html-progress 3s forwards;
+}
+
+@keyframes html-progress {
+    100% {
+        width: 90%;
+    }
+}
+#css {
+    animation: css-progress 3s forwards;
+}
+
+@keyframes css-progress {
+    100% {
+        width: 80%;
+    }
+}
+
+#javascript {
+    animation: javascript-progress 3s forwards;
+}
+
+@keyframes javascript-progress {
+    100% {
+        width: 50%;
+    }
+}
+
+#java {
+    animation: java-progress 3s forwards;
+}
+
+@keyframes java-progress {
+    100% {
+        width: 75%;
+    }
+}
+
+#python {
+    animation: python-progress 3s forwards;
+}
+
+@keyframes python-progress {
+    100% {
+        width: 60%;
+    }
+}
+
+#nodejs {
+    animation: nodejs-progress 3s forwards;
+}
+
+@keyframes nodejs-progress {
+    100% {
+        width: 60%;
+    }
+}
+
+#reactjs {
+    animation: reactjs-progress 3s forwards;
+}
+
+@keyframes reactjs-progress {
+    100% {
+        width: 75%;
+    }
+}
+.link {
+    text-decoration: none;
+    transition: color .5s;
+    padding: 1rem 2rem;
+}
+
+/* PROYECTOS */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* CONTACTO */
+.contact {
+    background-color: var(--limegreen);
+    border-radius: 18px;
+    padding: 1rem;
+}
+.contact label{
+    display: block;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+}
+.contact input {
+    width: 100%;
+    height: 3vh;
+    margin: .5rem auto;
+    border-radius: 15px;
+    border: 1px solid var(--limegreen);
+    
+}
+
+fieldset legend {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: var(--primary);
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    width: 100%;
+}
+
+.submit {
+    color: var(--primary);
+    font-weight: bold;
+    background-color: var(--ferntransparency) ;
+}
+/* FOOTER */
+.footer {
+    background-color: var(--primary);
+    margin-top: 5rem;
+    padding: 3rem;
+
+}
+
+.footer .link {
+    color: var(--limegreen);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.link {
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--primary);
+    background-color: var(--limegreen);
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .header {
+        background-position: center;
+        height: 34vh;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .intro img {
+        max-width: 50%;
+        margin-left:5rem ;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 40vh;
+    }
+
+    .navbar {
+        color: var(--primary);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .link {
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+
+     .contact div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       gap: 1rem;
+    }
+
+    .contact .option {
+        display: inline-flex; 
+        padding-right: 3rem;
+    }
+    .contact .submit {
+        width: 30%;
+        height: 6vh;
+        margin-left: 20rem;
+    } 
+ 
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .projects,
+    .contact-me{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .main {
+        margin: 1rem 10rem;
+    }
+
+}
