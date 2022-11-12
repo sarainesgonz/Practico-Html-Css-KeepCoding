@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Portfolio de Sara</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="body">
+    <nav class="navbar">
+        <div>
+            <h2>El Portfolio de Sara</h2>
+        </div>
+        <div>
+            <a class="link" href="/index.html">Inicio</a>
+            <a class="link" href="/proyectos.html">Mis proyectos</a>
+            <a class="link" href="/contacto.html">Contacto</a>
+        </div>
+
+    </nav>
+    <header class="header">
+        <div class="title">
+            <h1>El Portfolio de Sara</h1>
+            <h2>Desarrolladora Web Trainee</h2>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section>
+            <h2>Contacto</h2>
+
+            <form class="contact" action="contacto-exitoso.html" method="">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input required id="name" name="name" type="text" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label for="lastname">Apellido</label>
+                    <input required id="lastname" name="lastname" type="text" placeholder="Tu apellido">
+                </div>
+                <div>
+                    <label for="phone">Teléfono</label>
+                    <input required id="phone" name="phone" type="tel" placeholder="Tu número">
+                </div>
+                <fieldset>
+                    <legend>¿Cómo me conociste?</legend>
+                    <div class="option">
+                        <label for="university">Universidad</label>
+                        <input required id="university" name="option" type="radio" value="university">
+                    </div>
+                    <div class="option">
+                    <label for="keepcoding">KeepCoding kick-off</label>
+                    <input required id="keepcoding" name="option" type="radio" value="keepcoding">
+                    </div>
+                    <div class="option">
+                    <label for="highschool">Colegio</label>
+                    <input required id="highschool" name="option" type="radio" value="highschool">
+                    </div>
+                    <div class="option">
+                    <label for="github">Github</label>
+                    <input required id="github" name="option" type="radio" value="github">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="github-username">Usuario de Github</label>
+                    <input id="github-username" name="github-username" type="text" pattern="@[a-z]+"
+                        placeholder="@username">
+                </div>
+                <div>
+                    <label for="description">Mensaje</label>
+                    <textarea class="message" required name="description" id="descrition" cols="30" rows="10"
+                        placeholder="Escribe tu mensaje (max. 180 caracteres)"></textarea>
+                </div>
+                <input class="submit" type="submit" value="Enviar">
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="link" href="https://www.linkedin.com/in/sara-ines-gonzalez-576a14153/" target="_blank">LinkedIn</a>
+        <a class="link" href="https://github.com/sarainesgonz" target="_blank">Github</a>
+        <a class="link" href="https://youtu.be/wKw4ZP0Xvkg" target="_blank">Youtube</a>
+        <a class="link" href="https://www.instagram.com/sara_igf3230/" target="_blank">Instagram</a>
+
+    </footer>
+
+</body>
+
+</html>
