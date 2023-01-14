@@ -27,7 +27,7 @@ h2 {
 }
 
 .header {
-    background-image: url(/img/coding.jpg);
+    background-image: url(../img/coding.jpg);
     background-size: cover;
     position: relative;
     height: 28vh;
@@ -106,7 +106,7 @@ h2 {
 
 @keyframes javascript-progress {
     100% {
-        width: 50%;
+        width: 90%;
     }
 }
 
@@ -136,7 +136,7 @@ h2 {
 
 @keyframes nodejs-progress {
     100% {
-        width: 60%;
+        width: 80%;
     }
 }
 
